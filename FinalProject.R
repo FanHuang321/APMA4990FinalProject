@@ -747,7 +747,7 @@ ggplot(plot_data, aes(x=K, y=error, color=split)) +
   xlab('Tree Depth') +
   ylab('Classification Error Rate')
 
-fit <- rpart(ExcessReadmission ~ ED_1b + ED_2b + IMM_2 + OP_20 +
+fit <- rpart(ExcessReadmission ~ ED_1b + ED_2b + 
                CareTransition + Cleanliness + MedCommunication +
                DischargeInfo + DoctorCommunication + NurseCommunication + PainManagement  + 
                StaffResponsiveness + Equipment + HomeHealthAgency + Hospice +
